@@ -1,0 +1,1 @@
+from shondesh.channels.channel_factory import ChannelFactory as ShondeshFactory

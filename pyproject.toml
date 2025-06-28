@@ -1,0 +1,26 @@
+[project]
+name = "shondesh"
+version = "0.1.0"
+description = "Send notification via channels"
+authors = [
+    {name = "Rakibul Haq",email = "haq.rakibul@gmail.com"}
+]
+license = {text = "MIT"}
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "aiohttp (>=3.12.13,<4.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.4.1"
+pytest-cov = "^6.2.1"
+black = "^25.1.0"
+pytest-mock = "^3.14.1"
+pytest-asyncio = "^1.0.0"
+
