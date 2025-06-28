@@ -2,6 +2,7 @@
 
 ![Shondesh Logo](assets/shondesh.png)
 [![PyPI version](https://badge.fury.io/py/shondesh.svg)](https://badge.fury.io/py/shondesh)
+[![Python versions](https://img.shields.io/pypi/pyversions/shondesh.svg)](https://pypi.org/project/shondesh/)
 [![Coverage Status](https://codecov.io/gh/rakibulhaq/shondesh/branch/main/graph/badge.svg)](https://codecov.io/gh/rakibulhaq/shondesh)
 [![Snyk](https://snyk.io/test/github/rakibulhaq/shondesh/badge.svg)](https://snyk.io/test/github/rakibulhaq/shondesh)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
@@ -64,5 +65,3 @@ This project is licensed under the MIT License.
 ## Contact
 
 For questions or support, open an issue on [GitHub](https://github.com/rakibulhaq/shondesh).
-```
-This matches the badge and logo style used in `escalite`. Adjust badge URLs or logo path as needed.
