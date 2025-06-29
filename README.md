@@ -35,10 +35,46 @@ poetry add shondesh
 ## Usage
 
 ```python
+# Slack Example
 from shondesh.channels.channel_factory import ChannelFactory
 
-channel = ChannelFactory.create_channel("email", smtp_server="smtp.example.com")
-channel.send("Hello, world!", to="user@example.com")
+slack_channel = ChannelFactory.create_channel(
+    "slack",
+    webhook_url="https://hooks.slack.com/services/your/slack/webhook",
+    channel="#general"
+)
+slack_channel.send("Hello from Shondesh!", username="Notifier")
+
+# Telegram Example
+telegram_channel = ChannelFactory.create_channel(
+    "telegram",
+    webhook_url="https://api.telegram.org/bot<token>/sendMessage",
+    chat_id="123456789"
+)
+telegram_channel.send("Hello Telegram user!")
+
+# Webhook Example
+webhook_channel = ChannelFactory.create_channel(
+    "webhook",
+    url="https://example.com/webhook",
+    method="POST",
+    headers={"Authorization": "Bearer yourtoken"}
+)
+webhook_channel.send({"event": "deploy", "status": "success"})
+
+# Email Example
+email_channel = ChannelFactory.create_channel(
+    "email",
+    smtp_server="smtp.example.com",
+    smtp_port=587,
+    username="your@email.com",
+    password="yourpassword"
+)
+email_channel.send(
+    "Hello Email user!",
+    to="recipient@example.com",
+    subject="Notification from Shondesh"
+)
 ```
 
 ## Configuration
