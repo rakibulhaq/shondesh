@@ -1,6 +1,6 @@
 [project]
 name = "shondesh"
-version = "0.1.1"
+version = "0.1.2"
 description = "Send notification via channels"
 authors = [
     {name = "Rakibul Haq",email = "haq.rakibul@gmail.com"}
