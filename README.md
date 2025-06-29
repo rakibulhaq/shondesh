@@ -8,8 +8,11 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 [![PyPI - Downloads](https://img.shields.io/pypi/dm/shondesh.svg?label=PyPI%20downloads)](https://pypistats.org/packages/shondesh)
 
-"সন্দেশ" (pronounced shôndesh) in Bengali can mean news, message, or a type of sweet.
-Shondesh is a Python package that provides a unified API for sending notifications across multiple channels. It supports Email, Telegram, Slack, and Webhook channels, allowing you to easily send messages without worrying about the underlying implementation details.
+"সন্দেশ" (pronounced shôndesh) in Bengali means news, message, or a type of sweet.
+
+Shondesh is a Python package that provides a unified API for sending notifications across multiple channels. 
+
+It supports Email, Telegram, Slack, and Webhook channels, allowing you to easily send messages without worrying about the underlying implementation details.
 
 ## Features
 
