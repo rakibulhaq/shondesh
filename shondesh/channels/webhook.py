@@ -39,12 +39,13 @@ class Webhook(Channel):
             async with aiohttp.ClientSession() as session:
                 for attempt in range(self.config.get("retry_count", 1)):
                     try:
-                        async with session.request(
+                        response = await session.request(
                             self.config.get("method", "POST"),
                             self.config["url"],
                             json=payload,
                             headers=headers,
-                        ) as response:
+                        )
+                        async with response:
                             if response.status < 400:
                                 return True
                     except Exception as e:
