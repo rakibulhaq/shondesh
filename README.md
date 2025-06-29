@@ -1,7 +1,8 @@
 # Shondesh
 
 ![Shondesh Logo](assets/shondesh.png)
-[![PyPI version](https://badge.fury.io/py/shondesh.svg)](https://badge.fury.io/py/shondesh)
+[![PyPI Version](https://img.shields.io/pypi/v/shondesh.svg)](https://pypi.org/project/shondesh/)
+[![Downloads](https://pepy.tech/badge/shondesh)](https://pepy.tech/project/shondesh)
 [![Python versions](https://img.shields.io/pypi/pyversions/shondesh.svg)](https://pypi.org/project/shondesh/)
 [![Coverage Status](https://codecov.io/gh/rakibulhaq/shondesh/branch/main/graph/badge.svg)](https://codecov.io/gh/rakibulhaq/shondesh)
 [![Snyk](https://snyk.io/test/github/rakibulhaq/shondesh/badge.svg)](https://snyk.io/test/github/rakibulhaq/shondesh)
