@@ -17,3 +17,5 @@ class SlackMessageFormatter:
                     value.replace("`", "\\`").replace("*", "\\*").replace("_", "\\_")
                 )
             attachment_fields.append({"title": key, "value": str(value), "short": True})
+
+        return attachment_fields
