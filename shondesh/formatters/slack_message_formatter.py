@@ -1,4 +1,7 @@
-class SlackMessageFormatter:
+from shondesh.formatters.base_formatter import Formatter
+
+
+class SlackMessageFormatter(Formatter):
 
     def format(self, message: dict) -> list:
         """
