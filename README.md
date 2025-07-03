@@ -1,6 +1,6 @@
 # Shondesh
 
-![Shondesh Logo](assets/shondesh.png)
+![Shondesh Logo](https://raw.githubusercontent.com/rakibulhaq/shondesh/main/logo.png)
 [![PyPI Version](https://img.shields.io/pypi/v/shondesh.svg)](https://pypi.org/project/shondesh/)
 [![Python versions](https://img.shields.io/pypi/pyversions/shondesh.svg)](https://pypi.org/project/shondesh/)
 [![Coverage Status](https://codecov.io/gh/rakibulhaq/shondesh/branch/main/graph/badge.svg)](https://codecov.io/gh/rakibulhaq/shondesh)
