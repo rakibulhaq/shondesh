@@ -19,6 +19,8 @@ class TelegramMessageFormatter(Formatter):
         if not message:
             return ""
 
+        formatted_message = {}
+
         for key, value in message.items():
             if isinstance(value, str):
                 # Escape special characters for Telegram
@@ -32,10 +34,10 @@ class TelegramMessageFormatter(Formatter):
                     .replace(">", "&gt;")
                     .replace("<", "&lt;")
                 )
-            message[key] = str(value)
+            formatted_message[key] = str(value)
         # Join the message parts with double newlines for better readability
-        message = "\n".join(f"<b>{key}</b>: {value}" for key, value in message.items())
+        final_message = "\n".join(f"<b>{key}</b>: {value}" for key, value in formatted_message.items())
         # Wrap the message in a code block for Telegram
-        message = f"<pre>{message}</pre>"
+        final_message = f"<pre>{final_message}</pre>"
 
-        return message
+        return final_message
