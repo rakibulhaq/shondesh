@@ -1,12 +1,12 @@
 from shondesh.channels.base import Channel, logger
 from shondesh.formatters.base_formatter import Formatter
-from shondesh.formatters.dict_table_formatter import DictTableFormatter
+from shondesh.formatters.telegram_message_formatter import TelegramMessageFormatter
 
 
 class Telegram(Channel):
     """Telegram alert channel implementation"""
 
-    def __init__(self, config: dict, formatter: Formatter = DictTableFormatter()):
+    def __init__(self, config: dict, formatter: Formatter = TelegramMessageFormatter()):
         super().__init__(config=config, formatter=formatter)
         self.config = config
         self.formatter = formatter
